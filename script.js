@@ -1,3 +1,4 @@
+
 let jogada = 1;
 let bloick = [];
 let click = 0;
@@ -9,6 +10,28 @@ let jogou = 0;
 let jogou2 = 0;
 let vit = 0;
 let vit2 = 0;
+
+function iniciar(){
+        reiniciar()
+        document.getElementById('vit').innerHTML = "Vitórias: "
+        vit = 0;
+        document.getElementById('vit2').innerHTML = "Vitórias: "
+        vit2 = 0;
+        nome = prompt('Qual nome do primeiro jogador?');
+        nome2 = prompt('Qual nome do segundo jogador?');
+        document.getElementById('tabelajogadores').style.display = "block";
+        document.getElementById('p1').innerHTML = nome;
+        document.getElementById('p2').innerHTML = nome2;
+        document.getElementById('p1').style.visibility = "visible";
+        document.getElementById('p2').style.visibility = "visible";
+        document.getElementById('reiniciar').style.visibility = "visible"; 
+        alert('JOGO INICIADO! ' + nome + ' é o jogador X e ' + nome2 +' jogador O');
+        let bloco = document.querySelectorAll('.bloco');
+        for (let i = 0; i < 9; i++)
+        {
+            bloco[i].style.pointerEvents = "auto";
+        }    
+    }
 
 function jogo(aX, oX, block, ind, ind1) {
 
@@ -113,3 +136,39 @@ function jogo(aX, oX, block, ind, ind1) {
         
     }, 1);
 }
+
+function reiniciar(player) {
+    if (player == 1)
+    {
+        const vitoria1 = document.getElementById('vit');
+        vitoria1.innerHTML = "Vitórias: " + vit;
+    }
+    else if (player == 2)
+    {
+        const vitoria2 = document.getElementById('vit2');
+        vitoria2.innerHTML = "Vitórias: " + vit2;
+    }
+    const blocosimg = document.querySelectorAll('.img');
+    const pointerreset = document.querySelectorAll('.bloco');
+
+    for (let  i = 0; i < 18; i++)
+    {
+        blocosimg[i].style.visibility = "hidden";
+    }
+
+    for (let  i = 0; i < 10; i++)
+    {
+        bloick[i] = '';
+    }
+
+    for (let  i = 0; i < 9; i++)
+    {
+        pointerreset[i].style.pointerEvents = "auto";
+    }
+    jogou = 0;
+    jogou2 = 0;
+    jogada = 1;
+    document.getElementById('jog').innerHTML = "Jogadas: 0"
+    document.getElementById('jog2').innerHTML = "Jogadas: 0"
+}
+

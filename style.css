@@ -9,3 +9,161 @@ body {
     background-image: url('https://wallpaperaccess.com/full/2413558.jpg');
 }
 
+
+#containerprincipal {
+    background-color: aquamarine;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -3px 3px 5px black;
+    background-image: url('https://www.desktopbackground.org/p/2011/03/07/168447_minimalistic-pattern-patterns-backgrounds-carbon-fiber-backgrounds_1920x1200_h.jpg');
+}
+
+#containerjogo {
+    background-color: rgb(50, 190, 144);
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.bloco{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 20px;
+    cursor: pointer;
+    user-select: none;
+    pointer-events: none;
+    box-shadow: -3px 3px 5px black;
+}
+
+.containerjogo {
+    display: flex;
+}
+
+
+.bloco img {
+    width: 145px;
+    visibility: hidden;
+    position: absolute;
+}
+
+#containerprincipal button:nth-child(4) {
+    position: absolute;
+    bottom: 40px;
+    right: 80px;
+    width: 95px;
+    font-size: 15px;
+    border-radius: 20px;
+    text-shadow: 2px 2px 3px grey;
+}
+
+
+#containerprincipal h3:nth-child(3){
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+    visibility: hidden;
+    color: white;
+}
+
+#h3inicio {
+    position: absolute;
+    color: white;
+    top: 20px;
+    right: 30px;
+    text-shadow: 2px 2px 5px black;
+}
+
+#reiniciar {
+    visibility: hidden;
+}
+
+#tabelajogadores {
+    position: absolute;
+    top: 150px;
+    right: 70px;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+
+
+
+#tabelajogadores p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;;
+    visibility: visible;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#tabelajogadores #jog {
+    font-size: 12px;
+
+}
+#tabelajogadores #jog2 {
+    font-size: 12px;
+
+}
+
+
+
+
+#iniciar {
+    position: absolute;
+    top: 80px;
+    right: 90px;
+    font-size: 15px;
+    border-radius: 20px;
+    text-shadow: 2px 2px 3px grey;
+    box-shadow: 2px 2px 5px black;;
+    padding: 10px;
+    cursor:pointer;
+}
+
+
+#tabelajogadores #vit {
+    font-size: 12px;
+
+}
+
+#tabelajogadores #vit2 {
+    font-size: 12px;
+
+}
+
+#instruçoes {
+    background-color: aquamarine;
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: white;
+    background-image: url('https://www.desktopbackground.org/p/2011/03/07/168447_minimalistic-pattern-patterns-backgrounds-carbon-fiber-backgrounds_1920x1200_h.jpg');
+}
+
+#instruçoes, h1 {
+    text-align: center;
+}
+
+.blocoinst p {
+    font-size: 14px;
+    padding: 5px;
+    background-color:#1f1e1e;
+
+
+}
