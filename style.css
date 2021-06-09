@@ -167,3 +167,16 @@ body {
 
 
 }
+@media screen and (max-width: 100px) {
+    #containerprincipal {
+    background-color: rgb(145, 250, 215);
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    box-shadow: -3px 3px 5px rgb(0, 0, 0);
+    background-image: url('https://www.desktopbackground.org/p/2011/03/07/168447_minimalistic-pattern-patterns-backgrounds-carbon-fiber-backgrounds_1920x1200_h.jpg');
+}
+}
