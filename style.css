@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 5px black;
+}
+
+body {
+    margin: 0px;
+    background-image: url('https://wallpaperaccess.com/full/2413558.jpg');
+}
+
