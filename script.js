@@ -168,6 +168,7 @@ function reiniciar(player) {
     jogou = 0;
     jogou2 = 0;
     jogada = 1;
+    document.getElementById('h3').style.visibility = "hidden"; 
     document.getElementById('jog').innerHTML = "Jogadas: 0"
     document.getElementById('jog2').innerHTML = "Jogadas: 0"
 }
