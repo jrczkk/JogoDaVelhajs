@@ -12,11 +12,13 @@ let vit = 0;
 let vit2 = 0;
 
 function iniciar(){
-        reiniciar()
-        document.getElementById('vit').innerHTML = "Vitórias: "
+        reiniciar()              
         vit = 0;
+        vit2 = 0;  
+
+        document.getElementById('vit').innerHTML = "Vitórias: "
         document.getElementById('vit2').innerHTML = "Vitórias: "
-        vit2 = 0;
+
         nome = prompt('Qual nome do primeiro jogador?');
         nome2 = prompt('Qual nome do segundo jogador?');
         document.getElementById('tabelajogadores').style.display = "block";
@@ -33,7 +35,7 @@ function iniciar(){
         }    
     }
 
-function jogo(aX, oX, block, ind, ind1) {
+function jogo(aX, oX, block, ind) {
 
     if (jogada == 1){
         document.getElementById(aX).style.visibility = "visible";
@@ -169,7 +171,7 @@ function reiniciar(player) {
     jogou2 = 0;
     jogada = 1;
     document.getElementById('h3').style.visibility = "hidden"; 
-    document.getElementById('jog').innerHTML = "Jogadas: 0"
-    document.getElementById('jog2').innerHTML = "Jogadas: 0"
+    document.getElementById('jog').innerHTML = "Jogadas: 0";
+    document.getElementById('jog2').innerHTML = "Jogadas: 0";
 }
 
