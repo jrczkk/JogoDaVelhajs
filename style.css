@@ -156,11 +156,8 @@ body {
     background-image: url('https://www.desktopbackground.org/p/2011/03/07/168447_minimalistic-pattern-patterns-backgrounds-carbon-fiber-backgrounds_1920x1200_h.jpg');
 }
 
-<<<<<<< HEAD
-#instrucoes, h1 {
-=======
-#instruçoes, h1, h3, p {
->>>>>>> 87c3f7cb41f935d88da21950f677bdcdabac9e84
+#instrucoes, h1, h3, p {
+
     text-align: center;
 }
 
